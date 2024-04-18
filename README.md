@@ -64,34 +64,27 @@ There will be some sections to be shown to you
 
   ![Dropout Distribution](src/Pie_chart_distribution.png)
 
-  `Student Distribution - Gender`
-
-  ![Barchart Distribution](src/Bar_chart_distribution.png)
-
   `Student Distribution - Age`
 
   ![Pie_chart Dist](src/age_distribution.png)
 
 - **Correlation between Variables**
-We divide the correlations heatmap based on the big pictures of feature that we have divided above:
-<style>
-  td img {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-  }
-</style>
+  We divide the correlations heatmap based on the big pictures of feature that we have divided above:
 
-<table>
-  <tr>
-    <td><img src="src/student_status image.png" alt="Image 1" style="width: 50%;"/></td>
-    <td><img src="src/Student_status 2.png" alt="Image 2" style="width: 50%;"/></td>
-  </tr>
-  <tr>
-    <td><img src="src/Student status 3.png" alt="Image 3" style="width: 50%;"/></td>
-    <td><img src="src/Student_status 4.png" alt="Image 4" style="width: 50%;"/></td>
-  </tr>
-</table>
+  `Demographic data`
+
+  ![Demographic Data](src/student_status%20image.png)
+
+  `Socio-Economic Data`
+
+  ![Barchart Distribution](src/Student_status%202.png)
+
+  `Macro-Economic Data`
+
+  ![Pie_chart Dist](src/Student%20status%203.png)
+
+  `Academic data`
+  ![Academic data](src/Student_status%204.png)
 
 - **Data Preparation**
   Lastly in this section, we will filter a number of featrures that we are going to take out, since it has irrelevant correlations with the varaible that we want to predict, which is the student status. This process is already being processed in the Notebook. You may see the detail on it.
