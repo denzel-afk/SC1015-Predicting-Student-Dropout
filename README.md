@@ -60,8 +60,20 @@ There will be some sections to be shown to you
 - **Data Visualization**
   Judging from the distribution of students `occupied`, `enrolled`, `dropped out` you will notice that the number of dropped out students is `1421` out of `4424`. This indicates the sector need a little seriousness on handling this case. These are also some distributions graphics based on some features
 
+  `General Student Distribution`
+
+  ![Dropout Distribution](src/Pie_chart_distribution.png)
+
+  `Student Distribution - Gender`
+
+  ![Barchart Distribution](src/Bar_chart_distribution.png)
+
+  `Student Distribution - Age`
+
+  ![Pie_chart Dist](src/age_distribution.png)
+
 - **Correlation between Variables**
-  We divide the correlations heatmap based on the big pictures of feature that we hae divided above:
+  We divide the correlations heatmap based on the big pictures of feature that we have divided above:
 
 - **Data Preparation**
   Lastly in this section, we will filter a number of featrures that we are going to take out, since it has irrelevant correlations with the varaibel that we want to predict, which is the student status.
