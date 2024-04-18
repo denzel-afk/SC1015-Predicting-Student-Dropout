@@ -6,8 +6,8 @@ _This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial 
 
 ## Contributors
 
-1. @
-2. @
+1. Denzel Elden Wijaya (@denzel-afk)
+2. Federrico Hansen Budianto (@jehann)
 3. @
 
 ## Problem Definition
