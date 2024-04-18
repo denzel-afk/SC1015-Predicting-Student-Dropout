@@ -1,1 +1,1 @@
-# SC1015-Predicting-Student-Dropout
+# Welcome to Predicting Student Dropout Repository
