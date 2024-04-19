@@ -94,9 +94,12 @@ There will be some sections to be shown to you
 <a id=section-3></a>
 We will use various Machine Learning Techniques to determine which one is the best predictor, such as:
 
-1. Logistic Regression
-2. KNN (K-Nearest Neighbour)
-3. Hyperparameter Tuning
+1. Random Forest
+2. Logistic Regression
+3. SVM (Support Vector Machine)
+4. KNN (K-Nearest Neighbour)
+
+In advanced, we are going to combine those models into an ensemble one to gain the robustness of the model. Besides, we also apply the ROC, Precision Call, and t-SNE to hinder the models from overfitting case. Moreover, we also do a re-engineering data to separate between dropped-out and non dropped-out students, to gain a more accurate predictor. The details of the implementation can be seen in our NoteBook later.
 
 ## Evaluation of the Predictions
 
