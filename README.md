@@ -9,7 +9,7 @@ _This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial 
 ## Contributors
 
 1. Denzel Elden Wijaya (@denzel-afk)
-2. Federrico Hansen Budianto (@Jehanntoro)
+2. Federrico Hansen Budianto (@Jehantoro)
 3. Reswara Anargya Dzakirullah (@reswaraa)
 
 ## Table of Contents
