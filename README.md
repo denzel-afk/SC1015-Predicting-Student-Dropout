@@ -36,11 +36,11 @@ Our analysis aims to shed light on several key factors, that we will filter late
 
 1. **Demographic Analysis**: We will investigate how demographic factors like gender, age at enrollment, marital status, and nationality correlate with dropout rates.
 
-2. **Economic Factors**: We'll explore the impact of economic factors such as parental occupation, tuition fee payment status, and eligibility for scholarships on dropout rates. Furthermore, we also analyze some other indicators such as unemployment rate, inflation rate, and GDP growth and dropout rates, considering their indirect effects on education outcomes.
+2. **Economic Factors**: We will explore the impact of economic factors such as parental occupation, tuition fee payment status, and eligibility for scholarships on dropout rates. Furthermore, we also analyze some other indicators such as unemployment rate, inflation rate, and GDP growth and dropout rates, considering their indirect effects on education outcomes.
 
-3. **Academic Performance**: We'll analyze how students' academic performance, including curricular units and evaluations, influences their likelihood of dropping out.
+3. **Academic Performance**: We will analyze how students' academic performance, including curricular units and evaluations, influences their likelihood of dropping out.
 
-4. **Social and Special Needs**: We'll examine whether students with educational special needs or facing unique challenges like displacement or debt are more prone to dropping out.
+4. **Social and Special Needs**: We will examine whether students with educational special needs or facing unique challenges like displacement or debt are more prone to dropping out.
 
 The anticipated outcome is to provide valuable insights into the multifaceted factors affecting student dropout. By pinpointing high-risk groups and understanding the nuanced contributors to dropout rates, the school can design targeted interventions and policies to enhance student retention and cultivate an environment conducive to learning. Hence, here we are going to answer these 3 main questions:
 
