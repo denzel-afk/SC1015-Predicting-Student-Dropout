@@ -9,7 +9,7 @@ _This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial 
 ## Contributors
 
 1. Denzel Elden Wijaya (@denzel-afk) - Machine Learning, Data Cleaning, and GitHub Setters
-2. Federrico Hansen Budianto (@Jehanntoro) - Presentation Slides, Evaluation, and Data Extraction
+2. Federrico Hansen Budianto (@Jehantoro) - Presentation Slides, Evaluation, and Data Extraction
 3. Reswara Anargya Dzakirullah (@reswaraa) - Data Visualization, Exploratory Data Analysis, and Data Extraction
 
 ## Table of Contents
