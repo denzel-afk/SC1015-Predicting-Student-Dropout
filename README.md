@@ -8,107 +8,90 @@ _This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial 
 
 ## Contributors
 
-1. Denzel Elden Wijaya (@denzel-afk)
-2. Federrico Hansen Budianto (@Jehanntoro)
-3. Reswara Anargya Dzakirullah (@reswaraa)
+1. Denzel Elden Wijaya (@denzel-afk) - Machine Learning, Data Cleaning, and GitHub Setters
+2. Federrico Hansen Budianto (@Jehanntoro) - Presentation Slides, Evaluation, and Data Extraction
+3. Reswara Anargya Dzakirullah (@reswaraa) - Data Visualization, Exploratory Data Analysis, and Data Extraction
 
 ## Table of Contents
 
 1. [Problem Introduction](#section-1)
 2. [Exploratory Data Analysis (EDA) and Data Analysis](#section-2)
 3. [Methodology](#section-3)
-4. [Evaluation of the Predictions](#section-4)
-5. [Conclusion, Implementation, and Insights](#section-5)
+4. [Evaluation of the Predictions and Conclusion](#section-4)
+5. [Insights](#section-5)
 6. [References](#section-6)
 
 ## Problem Introduction
 
 <a id=section-1></a>
-The universal right to quality education is acknowledged globally, prompting governments to prioritize the enrollment and successful completion of schooling for all children. Nevertheless, dropout rates appear as a significant obstacle, affected by various factors, such as diverse social, economic, and demographic factors. Recognizing this challenge, we need to make thorough analysis fixing this problem, even better in the early stages of undergraduate programs. This analysis aims to uncover the root causes and pinpoint at-risk populations, enabling the development of tailored strategies to effectively minimize dropout rates and strategizing a pre-program for undergraduate students , so they will be ensured that the education in the university is well-programmed.
 
-In this notebook, utilizing “Predict Students’ Dropout and Academic Success. UCI Machine Learning Repository”, provided by Realinho, Valentim, Vieira Martins, Mónica, Machado, Jorge, and Baptista, Luís (2021) in UCI, we will present an in-depth analysis of student dropout in school education
+This project aims to analyze more into student dropout rates in school education, particularly focusing on undergraduates, using the "Predict Students' Dropout and Academic Success" dataset from the UCI Machine Learning Repository. Despite potential limitations like missing school, area, or caste data, we aim to extract insights from existing attributes.
 
-#### Project Overview
+#### Key Analysis Area :
 
-The main goal of this project is to conduct a thorough examination of student dropout rates in school education, focusing particularly on undergraduate students, using the dataset "Predict Students' Dropout and Academic Success." Despite potential limitations such as the absence of school, area, or caste data, we aim to extract valuable insights from the dataset's existing attributes.
+1. **Demographics**: Investigate correlations between gender, age at enrollment, marital status, nationality, and dropout rates.
+2. **Economic Factors**: Explore the impact of parental occupation, tuition fee payment status, scholarships, and economic indicators like unemployment, inflation, and GDP growth on dropout rates.
+3. **Academic Performance**: Analyze how academic performance influences dropout likelihood, considering curricular units and evaluations.
+4. **Social and Special Needs**: Examine if students with special educational needs or facing challenges like displacement or debt are more prone to dropping out.
 
-Our analysis aims to shed light on several key factors, that we will filter later:
-
-1. **Demographic Analysis**: We will investigate how demographic factors like gender, age at enrollment, marital status, and nationality correlate with dropout rates.
-
-2. **Economic Factors**: We'll explore the impact of economic factors such as parental occupation, tuition fee payment status, and eligibility for scholarships on dropout rates. Furthermore, we also analyze some other indicators such as unemployment rate, inflation rate, and GDP growth and dropout rates, considering their indirect effects on education outcomes.
-
-3. **Academic Performance**: We'll analyze how students' academic performance, including curricular units and evaluations, influences their likelihood of dropping out.
-
-4. **Social and Special Needs**: We'll examine whether students with educational special needs or facing unique challenges like displacement or debt are more prone to dropping out.
-
-The anticipated outcome is to provide valuable insights into the multifaceted factors affecting student dropout. By pinpointing high-risk groups and understanding the nuanced contributors to dropout rates, the school can design targeted interventions and policies to enhance student retention and cultivate an environment conducive to learning. Hence, here we are going to answer these 3 main questions:
-
-#### Questions
+#### Questions and Objectives
 
 1. Can we actually predict the chance of a particular undergraduate students being dropped out?
 2. Is it true the myth that says parental background greatly influences a child's education?
 3. Which of the model is the best fit for our prediction?
 
-In subsequent sections of this notebook, we will delve into data preprocessing, exploratory data analysis, and the development of predictive models to aid in dropout analysis. Despite potential data limitations, we aim to contribute to the school’s efforts in safeguarding every student’s right to education and mitigating dropout rates wherever feasible.
+<a id=section-2></a>
 
 ## Exploratory Data Analysis and Data Visualization
 
-<a id=section-2></a>
-There will be some sections to be shown to you
+Here is one of the data visualizations that show you the top 10 features that influence student dropout status (after cleaning). For further analysis, you may open the NoteBook to find out some interesting features.
 
-- **Data Visualization**
-  Judging from the distribution of students `occupied`, `enrolled`, `dropped out` you will notice that the number of dropped out students is `1421` out of `4424`. This indicates the sector need a little seriousness on handling this case. These are also some distributions graphics based on some features
-
-  `General Student Distribution`
-
-  ![Dropout Distribution](src/Pie_chart_distribution.png)
-
-  `Student Distribution - Age`
-
-  ![Pie_chart Dist](src/age_distribution.png)
-
-- **Correlation between Variables**
-  We divide the correlations heatmap based on the big pictures of feature that we have divided above:
-
-  `Demographic data`
-
-  ![Demographic Data](src/student_status%20image.png)
-
-  `Socio-Economic Data`
-
-  ![Barchart Distribution](src/Student_status%202.png)
-
-  `Macro-Economic Data`
-
-  ![Pie_chart Dist](src/Student%20status%203.png)
-
-  `Academic data`
-  ![Academic data](src/Student_status%204.png)
-
-- **Data Preparation**
-  Lastly in this section, we will filter a number of featrures that we are going to take out, since it has irrelevant correlations with the varaible that we want to predict, which is the student status. This process is already being processed in the Notebook. You may see the detail on it.
-
-## Methodology
+![Top 10 factors Image](src/top10factors.jpg)
 
 <a id=section-3></a>
+
+## Methodology (Models)
+
+<a id=section-4></a>
 We will use various Machine Learning Techniques to determine which one is the best predictor, such as:
 
 1. Random Forest
-2. Logistic Regression
+2. Logistic Regression (**Best One**)
 3. SVM (Support Vector Machine)
 4. KNN (K-Nearest Neighbour)
 
-In advanced, we are going to combine those models into an ensemble one to gain the robustness of the model. Besides, we also apply the ROC, Precision Call, and t-SNE to hinder the models from overfitting case. Moreover, we also do a re-engineering data to separate between dropped-out and non dropped-out students, to gain a more accurate predictor. The details of the implementation can be seen in our NoteBook later.
+In advanced, we are going to combine those models into an ensemble one to gain the robustness of the model. Besides, we also apply the ROC, and t-SNE to hinder the models from overfitting and to check the accuracy of the models.
 
-## Evaluation of the Predictions
+## Evaluation and Conlusion
 
-<a id=section-4></a>
-
-## Conclusion, Implementations, and Insights
+- Academic performance is the highest correlated sectors with `Dropout Status`, where `Interaction_CU_1st_2nd_Grade` is the highest one ($0.57$)
+- Combining **enrolled** and **graduate** into **Non Dropped** to make the model more accurate
+- Although not the primary factor, parental background can indeed influence students' performance.
+- SVM is the model that requires the most time to find the optimal model, taking 1 minute and 7 seconds.
+- KNN ($0.8659$) gets the highest accuracy on the training sets and only takes 5 seconds to find the best models.
+- Logistic Regression achieves the highest accuracy on the testing sets, with a score of $0.8514$, making it the best predictor.
+- It is possible to predict the `Dropout Status` utiling the model that we have provided. Even if your data is unstructured, you can use the `Ensembled Model` that has been checked by ROC and t-SNE, which comprises the best feature in each model.
 
 <a id=section-5></a>
 
-## References
+## Insights and Lessons
+
+- Extraction from UCI Machine Learning Repository
+- Data Cleaning with careful considerations
+- PCA for dimension reduction.
+- Logistic regression, SVM, KNN, and Random Forest
+- Voting Classifier for Ensemble Model
+- ROC and t-SNE for model evaluation
+- FPR and TPR for ROC
+- Working in Kaggle and Collaborating in GitHub
 
 <a id=section-6></a>
+
+## References
+
+- https://doi.org/10.24432/C5MC89.
+- https://www.datacamp.com/tutorial/principal-component-analysis-in-python
+- https://builtin.com/data-science/tsne-python
+- https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
+- https://machinelearningmastery.com/hyperparameters-for-classification-machine-learning-algorithms/
+- https://pyimagesearch.com/2021/05/17/introduction-to-hyperparameter-tuning-with-scikit-learn-and-python/
