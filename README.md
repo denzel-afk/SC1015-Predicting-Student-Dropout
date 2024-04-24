@@ -60,6 +60,8 @@ We will use various Machine Learning Techniques to determine which one is the be
 3. SVM (Support Vector Machine)
 4. KNN (K-Nearest Neighbour)
 
+![Logistic Regression](src/Logistic_regression.jpg)
+
 In advanced, we are going to combine those models into an ensemble one to gain the robustness of the model. Besides, we also apply the ROC, and t-SNE to hinder the models from overfitting and to check the accuracy of the models.
 
 ## Evaluation and Conlusion
